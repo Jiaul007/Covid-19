@@ -1,0 +1,187 @@
+@media screen and (max-width: 780px) {
+
+    /*header section is start here-------------*/
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    #openbar h1 {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        background: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        height: 7rem;
+        padding: 10px;
+        top: 0;
+        position: fixed;
+        z-index: 1111111111;
+
+    }
+
+    .logo {
+        margin-left: 2rem;
+    }
+
+    nav img {
+        width: 9rem;
+        padding: 1rem;
+
+    }
+
+    .active a {
+        color: var(--red);
+    }
+
+    nav #openh1 {
+        width: 100%;
+        display: none;
+        text-align: center;
+        margin-right: 0rem;
+        background: var(--white);
+        margin-top: 32rem;
+        position: fixed;
+        -webkite-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    nav ul li:last-child {
+        margin-right: 0rem;
+    }
+
+    .fullheadercontentdiv {
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .fullheadercontentdiv .leftheaderdiv {
+        width: 100%;
+        margin-top: 5.5rem;
+    }
+
+    .fullheadercontentdiv .rightheaderimg {
+        width: 100%;
+    }
+
+
+
+    /*symtoms section is start here*/
+
+    .seamtomssection {
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .seamtomssection .leftseamtomssection {
+        width: 100%;
+        padding: 3rem;
+
+    }
+
+    .seamtomssection .leftseamtomssection .thirddsecul {
+        text-align: center;
+        margin: auto 4rem;
+    }
+
+    .seamtomssection .leftseamtomssection .thirddsecul ul {
+        width: 20rem;
+        margin: 0 1rem;
+    }
+
+    .seamtomssection .leftseamtomssection .thirddsecul ul li {
+        font-size: 1.7rem;
+        line-height: 3rem;
+        list-style: square;
+
+    }
+
+    .seamtomssection .thirddsecul {
+        width: 100%;
+    }
+
+    .rightsymptomsset {
+        width: 100%;
+        padding: 3rem;
+    }
+
+
+
+
+    /*prevent section is start here*/
+    .preventsection {
+        height: auto;
+    }
+
+    .firstsection {
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .leftprevent {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .leftprevent img {
+        width: 60%;
+    }
+
+    .rightprevent {
+        width: 100%;
+        padding: 1.7rem;
+    }
+
+    .rightprevent ul {
+        text-align: left;
+        padding: 1.7rem;
+    }
+
+    .rightprevent ul li {
+        list-style: square;
+    }
+
+    .lastprevsection {
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .lastprevsection .lastprevent1 {
+        width: 100%;
+    }
+
+
+    .lastprevsection .lastprevent1 ul {
+        padding-left: 2.5rem;
+        margin-top: 1.7rem;
+
+    }
+
+    .lastprevsection .lastprevent1 ul li {
+        list-style: square;
+        text-align: left;
+    }
+
+    .lastpreventimg {
+        width: 100%;
+        padding: 2rem;
+    }
+
+}

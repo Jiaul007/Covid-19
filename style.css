@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection {
+    background: #ff4f5b;
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    background: #0a0909;
+    width: 1.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff4f5b;
+}
+
+:root {
+    --white: #ffffff;
+    --h1color: #666666;
+    --pcolor: #999999;
+    --footer: #333333;
+    --red: #ff4f5b;
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2 {
+    color: var(--h1color);
+    text-transform: capitalize;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+}
+
+p,
+a,
+li,
+button {
+    color: var(--pcolor);
+    text-decoration: none;
+
+}
+
+span {
+    color: var(--red);
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    width: 18rem;
+    height: 4rem;
+    line-height: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    font-weight: normal;
+    border: none;
+    outline: none;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 50rem;
+    text-transform: uppercase;
+    -webkit-box-shadow: inset 0 0 0 0 #000;
+    box-shadow: inset 0 0 0 0 #000000;
+    -webkit-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: inset 200px 0 0 0 #000000;
+
+}
+
+/*header section is start here-------------*/
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+#openbar h1 {
+    font-size: 3rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkite-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 7rem;
+    padding: 10px;
+    top: 0;
+    position: fixed;
+    z-index: 1111111111;
+
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+nav img {
+    width: 9rem;
+    padding: 1rem;
+
+}
+
+.active a {
+    color: var(--red);
+}
+
+nav ul {
+    display: flex;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li:last-child {
+    margin-right: 3rem;
+}
+
+nav ul li a {
+    font-size: 2rem;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    bottom: 0;
+    left: 0;
+    transition: linear 0.5s;
+    -webkit-transition: linear 0.5s;
+    -o-transition: linear 0.5s;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: scale(0, 1);
+}
+
+nav ul li a:hover {
+    color: var(--red);
+}
+
+nav ul li a:hover::after {
+    background: var(--red);
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    transform: scale(1, 1);
+
+}
+
+.fullheadercontentdiv {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.fullheadercontentdiv .leftheaderdiv {
+    width: 50%;
+    padding: 2rem;
+}
+
+.fullheadercontentdiv .leftheaderdiv h3 {
+    font-size: 2.5rem;
+    color: var(--red);
+    font-weight: normal;
+}
+
+.fullheadercontentdiv .leftheaderdiv h1 {
+    font-size: 5rem;
+    font-weight: 450;
+    letter-spacing: 0.1rem;
+}
+
+.fullheadercontentdiv .leftheaderdiv p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    line-height: 1.3;
+}
+
+.fullheadercontentdiv .rightheaderimg {
+    width: 50%;
+}
+
+.fullheadercontentdiv .rightheaderimg img {
+    width: 90%;
+    height: 100%;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+
+
+/*container section is start here-----------------------------------------------------*/
+.container {
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: -1rem
+}
+
+.container .protectSection {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.container .protectSection .rowSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1.3rem 1.3rem 0 1.3rem;
+}
+
+.container .protectSection .rowSection .card {
+    background: var(--white);
+    width: 35rem;
+    margin: 1.6rem 2rem;
+    padding: 1.5rem;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    -webkit-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+}
+
+.container .protectSection .rowSection .card:hover {
+    -webkit-transform: translateY(-2rem);
+    -ms-transform: translateY(-2rem);
+    -o-transform: translateY(-2rem);
+    transform: translateY(-2rem);
+}
+
+.container .protectSection img {
+    width: 18rem;
+}
+
+
+.container > .protectSection > h1 {
+    font-size: 3.3rem;
+    padding: 0 0 2rem 0;
+}
+
+.card > h1 {
+    font-size: 3rem;
+}
+
+.card > p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+button {
+    margin: 1rem 0rem;
+}
+
+
+/*symtoms section is start here*/
+
+.seamtomssection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.seamtomssection .leftseamtomssection {
+    width: 50%;
+    padding: 2rem;
+
+}
+
+.seamtomssection .leftseamtomssection h1 {
+    font-size: 3rem;
+
+}
+
+.seamtomssection .leftseamtomssection .thirddsecul {
+    display: flex;
+}
+
+.seamtomssection .leftseamtomssection .thirddsecul ul {
+    width: 30rem;
+
+}
+
+.seamtomssection .leftseamtomssection .thirddsecul ul li {
+    font-size: 1.7rem;
+    list-style: disc;
+    color: var(--h1color);
+
+}
+
+
+.seamtomssection .leftseamtomssection p {
+    font-size: 1.7rem;
+}
+
+.seamtomssection .thirddsecul {
+    width: 50%;
+    padding: 1rem;
+
+}
+
+.rightsymptomsset {
+    width: 50%;
+    padding: 1rem;
+}
+
+
+
+
+/*prevent section is start here*/
+.preventsection {
+    width: 100%;
+    height: 100vh;
+    background: var(--fotter);
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.firstsection {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftprevent {
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.leftprevent img {
+    width: 60%;
+}
+
+.rightprevent {
+    width: 50%;
+}
+
+.rightprevent h1 {
+    font-size: 3rem;
+    color: var(--h1color);
+}
+
+
+.rightprevent ul li {
+    font-size: 1.7rem;
+    list-style: disc;
+}
+
+.lastprevsection {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastprevsection .lastprevent1 {
+    width: 50%;
+}
+
+.lastprevsection .lastprevent1 h1 {
+    font-size: 3rem;
+    color: var(--h1color);
+}
+
+.lastprevsection .lastprevent1 ul li {
+    font-size: 1.7rem;
+    list-style: disc;
+}
+
+.lastpreventimg {
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.lastpreventimg img {
+    width: 70%;
+}
+
+
+/*hand wash section is start here*/
+.washyourhangsec {
+    width: 100%;
+}
+
+.washyourhangsec h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5rem 0;
+    padding: 1rem 0;
+
+}
+
+.cardcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardcenter .card {
+    flex-basis: 25rem;
+    margin: 1.5rem;
+    padding: 1rem;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.cardcenter .card::before {
+    position: absolute;
+    content: '1';
+    top: -1.8rem;
+    left: -1.8rem;
+    height: 5rem;
+    width: 5rem;
+    background: var(--red);
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--white);
+    z-index: -1;
+
+}
+
+.cardcenter .card:nth-child(2)::before {
+    content: '2';
+}
+
+.cardcenter .card:nth-child(3)::before {
+    content: '3';
+}
+
+.cardcenter .card:nth-child(4)::before {
+    content: '4';
+}
+
+.cardcenter .card:nth-child(5)::before {
+    content: '5';
+}
+
+.cardcenter .card:nth-child(6)::before {
+    content: '6';
+}
+
+
+.cardcenter .card img {
+    width: 90%;
+    padding: 2rem;
+
+}
+
+.cardcenter .card h2 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+
+/*spread section is start here*/
+.Spread {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.Spread h1 {
+    font-size: 3rem;
+    padding: 3rem 0;
+}
+
+.Spread .sepreadimgdiv {
+    padding: 3rem;
+    width: 90%;
+}
+
+.Spread .sepreadimgdiv img {
+    width: 80%;
+}
+
+
+/*footer section  is start here*/
+footer {
+    background: var(--footer);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .boxcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .boxcontainer .box {
+    flex: 25rem;
+    margin: 1.5rem 2rem;
+}
+
+footer .boxcontainer .box h1 {
+    font-size: 3rem;
+    color: var(--white);
+    font-weight: normal;
+}
+
+footer .boxcontainer .box > hr {
+    width: 50%;
+    background: var(--red);
+    border: none;
+}
+
+footer .boxcontainer .box ul li {
+    font-size: 2rem;
+    color: var(--pcolor)
+}
+
+
+footer .boxcontainer .box ul li a {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    display: block;
+}
+
+footer .boxcontainer .box ul li a:hover {
+    color: var(--red);
+
+}
+
+hr {
+    width: 80%;
+    height: .2rem;
+    outline: none;
+    background: var(--white)
+}
+
+.lastfooter {
+    padding: 2rem 0;
+}
+
+.topicon {
+    width: 5rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    cursor: pointer;
+}
